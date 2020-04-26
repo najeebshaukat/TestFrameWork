@@ -1,0 +1,8 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 22.606 s <<< FAILURE! - in TestSuite
+testObjects.ValidateTitle.basePageNavigation  Time elapsed: 0.062 s  <<< FAILURE!
+java.lang.AssertionError: expected [sign up] but found [Sign Up]
+	at testObjects.ValidateTitle.basePageNavigation(ValidateTitle.java:30)
+
