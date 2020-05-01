@@ -6,15 +6,21 @@
 		<listener class-name="testObjects.Listeners" />
 	</listeners>
 
-	<test name="HomePage">
+	<test name="Test Create Account">
 		<classes>
-			<class name="testObjects.HomePage" />
+			<class name="testObjects.CreateAccountTest" />
 		</classes>
 	</test>
 
-	<test name="ValidateTitle">
+	<test name="Test User Login">
 		<classes>
-			<class name="testObjects.ValidateTitle" />
+			<class name="testObjects.LoginTest" />
+		</classes>
+	</test>
+
+	<test name="Test Add to Cart">
+		<classes>
+			<class name="testObjects.AddtoCartTest" />
 		</classes>
 	</test>
 </suite>

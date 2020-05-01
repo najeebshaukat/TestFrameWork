@@ -17,7 +17,7 @@ import org.openqa.selenium.io.FileHandler;
 
 public class Base {
 
-	//global driver
+	//global driver and properties
 	public static WebDriver driver;
 	public Properties prop;
 	

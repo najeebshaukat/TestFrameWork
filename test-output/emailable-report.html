@@ -9,17 +9,29 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">Suite</th></tr>
-<tr><td><a href="#t0">HomePage</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">13,405</td><td></td><td></td></tr>
-<tr class="stripe"><td><a href="#t1">ValidateTitle</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">7,811</td><td></td><td></td></tr>
-<tr><th>Total</th><th class="num">1</th><th class="num">0</th><th class="num">0</th><th class="num attn">1</th><th class="num">21,216</th><th colspan="2"></th></tr>
+<tr><td><a href="#t0">Test Create Account</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">16,097</td><td></td><td></td></tr>
+<tr class="stripe"><td><a href="#t1">Test User Login</a></td><td class="num">2</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">34,907</td><td></td><td></td></tr>
+<tr><td><a href="#t2">Test Add to Cart</a></td><td class="num">3</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">24,221</td><td></td><td></td></tr>
+<tr><th>Total</th><th class="num">6</th><th class="num">0</th><th class="num">0</th><th class="num attn">1</th><th class="num">75,225</th><th colspan="2"></th></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">HomePage &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">testObjects.HomePage</td><td><a href="#m0">basePageNavigation</a></td><td rowspan="1">1587856560302</td><td rowspan="1">986</td></tr></tbody>
-<tbody id="t1"><tr><th colspan="4">ValidateTitle &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">testObjects.ValidateTitle</td><td><a href="#m1">basePageNavigation</a></td><td rowspan="1">1587856572253</td><td rowspan="1">61</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test Create Account &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">testObjects.CreateAccountTest</td><td><a href="#m0">homedepotCreateAccount</a></td><td rowspan="1">1588301192929</td><td rowspan="1">10224</td></tr></tbody>
+<tbody id="t1"><tr><th colspan="4">Test User Login &#8212; passed</th></tr><tr class="passedeven"><td rowspan="2">testObjects.LoginTest</td><td><a href="#m1">testLogin</a></td><td rowspan="2">1588301207331</td><td rowspan="2">18724</td></tr><tr class="passedeven"><td><a href="#m2">testLogin</a></td></tr></tbody>
+<tbody id="t2"><tr><th colspan="4">Test Add to Cart &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">testObjects.AddtoCartTest</td><td><a href="#m3">quintityCheck</a></td><td rowspan="1">1588301260663</td><td rowspan="1">4</td></tr><tr><th colspan="4">Test Add to Cart &#8212; passed</th></tr><tr class="passedeven"><td rowspan="3">testObjects.AddtoCartTest</td><td><a href="#m4">addItem</a></td><td rowspan="1">1588301252061</td><td rowspan="1">5574</td></tr><tr class="passedeven"><td><a href="#m5">searchItem</a></td><td rowspan="1">1588301243182</td><td rowspan="1">8877</td></tr><tr class="passedeven"><td><a href="#m6">viewCart</a></td><td rowspan="1">1588301257637</td><td rowspan="1">3024</td></tr></tbody>
 </table>
-<h2>HomePage</h2><h3 id="m0">testObjects.HomePage#basePageNavigation</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h2>ValidateTitle</h2><h3 id="m1">testObjects.ValidateTitle#basePageNavigation</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [sign up] but found [Sign Up]
-	at testObjects.ValidateTitle.basePageNavigation(ValidateTitle.java:30)
+<h2>Test Create Account</h2><h3 id="m0">testObjects.CreateAccountTest#homedepotCreateAccount</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Test User Login</h2><h3 id="m1">testObjects.LoginTest#testLogin</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th></tr><tr class="param stripe"><td>testOne@test.com</td><td>testPasswordOne</td><td>Test User One</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">testObjects.LoginTest#testLogin</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th></tr><tr class="param stripe"><td>testTwo@test.com</td><td>testPasswordTwo</td><td>Test User Two</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Test Add to Cart</h2><h3 id="m3">testObjects.AddtoCartTest#quintityCheck</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">junit.framework.AssertionFailedError: expected:&lt;1&gt; but was:&lt;2&gt;
+	at junit.framework.Assert.fail(Assert.java:47)
+	at junit.framework.Assert.failNotEquals(Assert.java:282)
+	at junit.framework.Assert.assertEquals(Assert.java:64)
+	at junit.framework.Assert.assertEquals(Assert.java:201)
+	at junit.framework.Assert.assertEquals(Assert.java:207)
+	at testObjects.AddtoCartTest.quintityCheck(AddtoCartTest.java:55)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
-... Removed 32 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+... Removed 27 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">testObjects.AddtoCartTest#addItem</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">testObjects.AddtoCartTest#searchItem</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">testObjects.AddtoCartTest#viewCart</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

@@ -1,45 +1,111 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="1" failed="1" skipped="0">
+<testng-results ignored="0" total="7" passed="6" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-04-25T19:15:52 EDT" name="Suite" finished-at="2020-04-25T19:16:13 EDT" duration-ms="21356">
+  <suite started-at="2020-04-30T22:46:27 EDT" name="Suite" finished-at="2020-04-30T22:47:42 EDT" duration-ms="75309">
     <groups>
     </groups>
-    <test started-at="2020-04-25T19:15:52 EDT" name="HomePage" finished-at="2020-04-25T19:16:05 EDT" duration-ms="13405">
-      <class name="testObjects.HomePage">
-        <test-method is-config="true" signature="initialize()[pri:0, instance:testObjects.HomePage@674658f7]" started-at="2020-04-25T19:15:52 EDT" name="initialize" finished-at="2020-04-25T19:16:00 EDT" duration-ms="8049" status="PASS">
+    <test started-at="2020-04-30T22:46:27 EDT" name="Test Create Account" finished-at="2020-04-30T22:46:43 EDT" duration-ms="16097">
+      <class name="testObjects.CreateAccountTest">
+        <test-method is-config="true" signature="initialize()[pri:0, instance:testObjects.CreateAccountTest@674658f7]" started-at="2020-04-30T22:46:27 EDT" name="initialize" finished-at="2020-04-30T22:46:32 EDT" duration-ms="5391" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialize -->
-        <test-method signature="basePageNavigation()[pri:0, instance:testObjects.HomePage@674658f7]" started-at="2020-04-25T19:16:00 EDT" name="basePageNavigation" finished-at="2020-04-25T19:16:01 EDT" duration-ms="986" status="PASS">
+        <test-method signature="homedepotCreateAccount()[pri:0, instance:testObjects.CreateAccountTest@674658f7]" started-at="2020-04-30T22:46:32 EDT" name="homedepotCreateAccount" finished-at="2020-04-30T22:46:43 EDT" duration-ms="10224" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- basePageNavigation -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:testObjects.HomePage@674658f7]" started-at="2020-04-25T19:16:01 EDT" name="closeBrowser" finished-at="2020-04-25T19:16:05 EDT" duration-ms="4308" status="PASS">
+        </test-method> <!-- homedepotCreateAccount -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:testObjects.CreateAccountTest@674658f7]" started-at="2020-04-30T22:46:43 EDT" name="closeBrowser" finished-at="2020-04-30T22:46:43 EDT" duration-ms="409" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
-      </class> <!-- testObjects.HomePage -->
-    </test> <!-- HomePage -->
-    <test started-at="2020-04-25T19:16:05 EDT" name="ValidateTitle" finished-at="2020-04-25T19:16:13 EDT" duration-ms="7811">
-      <class name="testObjects.ValidateTitle">
-        <test-method is-config="true" signature="initialize()[pri:0, instance:testObjects.ValidateTitle@4c4d27c8]" started-at="2020-04-25T19:16:05 EDT" name="initialize" finished-at="2020-04-25T19:16:12 EDT" duration-ms="6503" status="PASS">
+      </class> <!-- testObjects.CreateAccountTest -->
+    </test> <!-- Test Create Account -->
+    <test started-at="2020-04-30T22:46:43 EDT" name="Test User Login" finished-at="2020-04-30T22:47:18 EDT" duration-ms="34907">
+      <class name="testObjects.LoginTest">
+        <test-method is-config="true" signature="initialize()[pri:0, instance:testObjects.LoginTest@56bca85b]" started-at="2020-04-30T22:46:43 EDT" name="initialize" finished-at="2020-04-30T22:46:47 EDT" duration-ms="3672" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialize -->
-        <test-method signature="basePageNavigation()[pri:0, instance:testObjects.ValidateTitle@4c4d27c8]" started-at="2020-04-25T19:16:12 EDT" name="basePageNavigation" finished-at="2020-04-25T19:16:12 EDT" duration-ms="61" status="FAIL">
-          <exception class="java.lang.AssertionError">
+        <test-method signature="testLogin(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testObjects.LoginTest@56bca85b]" started-at="2020-04-30T22:46:47 EDT" name="testLogin" data-provider="getData" finished-at="2020-04-30T22:47:06 EDT" duration-ms="18724" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[testOne@test.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[testPasswordOne]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Test User One]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLogin -->
+        <test-method signature="testLogin(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testObjects.LoginTest@56bca85b]" started-at="2020-04-30T22:47:06 EDT" name="testLogin" data-provider="getData" finished-at="2020-04-30T22:47:14 EDT" duration-ms="8013" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[testTwo@test.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[testPasswordTwo]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Test User Two]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLogin -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:testObjects.LoginTest@56bca85b]" started-at="2020-04-30T22:47:14 EDT" name="closeBrowser" finished-at="2020-04-30T22:47:18 EDT" duration-ms="4487" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- testObjects.LoginTest -->
+    </test> <!-- Test User Login -->
+    <test started-at="2020-04-30T22:47:18 EDT" name="Test Add to Cart" finished-at="2020-04-30T22:47:42 EDT" duration-ms="24221">
+      <class name="testObjects.AddtoCartTest">
+        <test-method is-config="true" signature="initialize()[pri:0, instance:testObjects.AddtoCartTest@ed3068a]" started-at="2020-04-30T22:47:18 EDT" name="initialize" finished-at="2020-04-30T22:47:23 EDT" duration-ms="4601" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialize -->
+        <test-method signature="searchItem()[pri:0, instance:testObjects.AddtoCartTest@ed3068a]" started-at="2020-04-30T22:47:23 EDT" name="searchItem" finished-at="2020-04-30T22:47:32 EDT" duration-ms="8877" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchItem -->
+        <test-method signature="addItem()[pri:1, instance:testObjects.AddtoCartTest@ed3068a]" started-at="2020-04-30T22:47:32 EDT" name="addItem" finished-at="2020-04-30T22:47:37 EDT" duration-ms="5574" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addItem -->
+        <test-method signature="viewCart()[pri:2, instance:testObjects.AddtoCartTest@ed3068a]" started-at="2020-04-30T22:47:37 EDT" name="viewCart" finished-at="2020-04-30T22:47:40 EDT" duration-ms="3024" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- viewCart -->
+        <test-method signature="quintityCheck()[pri:3, instance:testObjects.AddtoCartTest@ed3068a]" started-at="2020-04-30T22:47:40 EDT" name="quintityCheck" finished-at="2020-04-30T22:47:40 EDT" duration-ms="4" status="FAIL">
+          <exception class="junit.framework.AssertionFailedError">
             <message>
-              <![CDATA[expected [sign up] but found [Sign Up]]]>
+              <![CDATA[expected:<1> but was:<2>]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [sign up] but found [Sign Up]
-at org.testng.Assert.fail(Assert.java:97)
-at org.testng.Assert.assertEqualsImpl(Assert.java:136)
-at org.testng.Assert.assertEquals(Assert.java:118)
-at org.testng.Assert.assertEquals(Assert.java:575)
-at org.testng.Assert.assertEquals(Assert.java:585)
-at testObjects.ValidateTitle.basePageNavigation(ValidateTitle.java:30)
+              <![CDATA[junit.framework.AssertionFailedError: expected:<1> but was:<2>
+at junit.framework.Assert.fail(Assert.java:47)
+at junit.framework.Assert.failNotEquals(Assert.java:282)
+at junit.framework.Assert.assertEquals(Assert.java:64)
+at junit.framework.Assert.assertEquals(Assert.java:201)
+at junit.framework.Assert.assertEquals(Assert.java:207)
+at testObjects.AddtoCartTest.quintityCheck(AddtoCartTest.java:55)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -70,15 +136,11 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+          </exception> <!-- junit.framework.AssertionFailedError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- basePageNavigation -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:testObjects.ValidateTitle@4c4d27c8]" started-at="2020-04-25T19:16:13 EDT" name="closeBrowser" finished-at="2020-04-25T19:16:13 EDT" duration-ms="367" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeBrowser -->
-      </class> <!-- testObjects.ValidateTitle -->
-    </test> <!-- ValidateTitle -->
+        </test-method> <!-- quintityCheck -->
+      </class> <!-- testObjects.AddtoCartTest -->
+    </test> <!-- Test Add to Cart -->
   </suite> <!-- Suite -->
 </testng-results>

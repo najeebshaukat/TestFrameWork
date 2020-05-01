@@ -1,0 +1,6 @@
+17:36:42.317 [main] ERROR resources.Base - We're sorry, the password you entered is incorrect. Please try again or reset your password.
+17:36:42.335 [main] INFO  resources.Base - Test User One
+17:36:51.442 [main] ERROR resources.Base - Your email and password combination didn't match our records. Please try again.
+17:36:51.442 [main] INFO  resources.Base - Test User Two
+22:46:43.149 [main] ERROR resources.Base - This email address has already been registered.
+22:47:06.041 [main] ERROR resources.Base - 
